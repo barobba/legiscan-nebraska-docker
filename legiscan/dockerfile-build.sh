@@ -4,6 +4,6 @@
 # See https://gist.github.com/mihow/9c7f559807069a03e302605691f85572
 # export $(echo $(cat .env | sed 's/#.*//g' | sed 's/\r//g' | xargs) | envsubst)
 
-container=legiscan_import:latest
+tag=legiscan:latest
 
-docker build -t $container .
+docker build -t $tag .

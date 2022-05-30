@@ -17,7 +17,7 @@
 ;;   dsn = "sqlsrv:Server=localhost,1433;Database=legiscan_api"
 ;;
 [database]
-dsn = "pgsql:host=localhost;port=5432;dbname=postgres"
+dsn = "pgsql:host=localhost;port=5432;dbname=lawmaking4all"
 db_user = postgres
 db_pass = password
 
@@ -32,7 +32,7 @@ massage_dates = 1
 ;;
 [memory_cache]
 ;; Use persistant external memcached server, 0 or 1 and specify host/port
-use_memcached = 1
+use_memcached = 0
 memcache_host = 127.0.0.1
 memcache_port = 11211
 

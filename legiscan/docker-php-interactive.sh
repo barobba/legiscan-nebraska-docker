@@ -10,4 +10,11 @@
 # -w            Working directory
 # --net         Connects a container to a network
 
-docker run --env-file=.env -it --rm -v $(pwd)/source/:/source/ -w /source --net=host legiscan_import
+docker run \
+    --env-file=.env \
+    -it \
+    --rm \
+    -v $(pwd)/:/source/ \
+    -w /source \
+    --net=host \
+    legiscan
